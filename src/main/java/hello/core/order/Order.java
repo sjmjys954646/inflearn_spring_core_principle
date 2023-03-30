@@ -1,4 +1,4 @@
-package hello.core;
+package hello.core.order;
 
 public class Order {
 
@@ -48,5 +48,15 @@ public class Order {
 
     public void setDiscountPrice(int discountPrice) {
         this.discountPrice = discountPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "memberId=" + memberId +
+                ", itemName='" + itemName + '\'' +
+                ", itemPrice=" + itemPrice +
+                ", discountPrice=" + discountPrice +
+                '}';
     }
 }
